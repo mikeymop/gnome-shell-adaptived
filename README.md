@@ -52,6 +52,7 @@ Implemneting Desktop Tinting should be the majority of the work in this project.
 ## To-DO
 
 * Find how and where to get the background average color from (bonus: get from region under window)
+  * https://github.com/GNOME/mutter/blob/master/src/compositor/meta-background.c
 * Find how to store the background color as a css property of js variable so that I can mask it
 * Implement the mask for the background color
 * Implement hte mask to add the gnome-std dark gray to the masked color (bonus: dont hard-code gnome gray)
