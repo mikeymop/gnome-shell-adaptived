@@ -17,7 +17,7 @@ This is an effort to create a content aware dark mode for gnome.
 ## Research
 
 * Some notes on Gnome Shell themes [here](http://www.patrickcoffey.io/post/theming-gnome-shell-sass-and-gulp). Likely depreciated.
-* gnome-shell theme elements are not part of gtk-3.0.`/usr/share/themes/Aadwaita/gtk-3.0/gtk.css`
+* gnome-shell theme elements are now part of gtk-3.0.`/usr/share/themes/Aadwaita/gtk-3.0/gtk.css`
 * 
 
 ### What is done in Mojave? (Chark full of new features)
@@ -33,7 +33,8 @@ Application design uses light elements carefully so as not to distract focus fro
 
 Mail offers an option. It would be nice to add a background option to geary to or even have it pull gnome or gtk's css color setting.
 
-### Desktop Tinting 10:00
+### Desktop Tinting (10:00)
+Implemneting Desktop Tinting should be the majority of the work in this project.
 
 1. Take sample of desktop portion that is behind the window (mutter/gtk)
 2. Derive average color for that x/y area
@@ -47,4 +48,3 @@ Mail offers an option. It would be nice to add a background option to geary to o
 
 * Rim shadow in dark mode is slightly crisper and higher (z index and contast / blur radius)
 * Stroke is added to the inner rim of the rim-shadow so that the window has more definition above its shadows
-* 
