@@ -19,6 +19,7 @@ This is an effort to create a content aware dark mode for gnome.
 * Some notes on Gnome Shell themes [here](http://www.patrickcoffey.io/post/theming-gnome-shell-sass-and-gulp). Likely depreciated.
 * gnome-shell theme elements are now part of gtk-3.0.`/usr/share/themes/Aadwaita/gtk-3.0/gtk.css`
 * [Peek](https://github.com/phw/peek) might be a good source on how to get the region under a screen area. They also explain that `xwayland` must be used in order for it to work on native wayland sessions at this moment. 
+* Blur is is considered by Apple an integral characteristic in Dark mode design. I should look into the efficacy of the css [blur](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur) property.
 
 ### What is done in Mojave? (Chark full of new features)
 
@@ -48,3 +49,16 @@ Implemneting Desktop Tinting should be the majority of the work in this project.
 
 * Rim shadow in dark mode is slightly crisper and higher (z index and contast / blur radius)
 * Stroke is added to the inner rim of the rim-shadow so that the window has more definition above its shadows
+
+## To-DO
+
+* Find how and where to get the background average color from (bonus: get from region under window)
+  * https://github.com/GNOME/mutter/blob/master/src/compositor/meta-background.c
+* Find how to store the background color as a css property of js variable so that I can mask it
+* Implement the mask for the background color
+* Implement hte mask to add the gnome-std dark gray to the masked color (bonus: dont hard-code gnome gray)
+* Apply this to `gnome-shell.css` that overrides the .css properties defining the gray (bonus: apply this to gtk2 and qt-widgets as well)
+* Package this as a gnome theme and/or extension
+* Look into further implementing this into the gnome-shell core for upstream
+* ????
+* Profit
