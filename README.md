@@ -19,6 +19,7 @@ This is an effort to create a content aware dark mode for gnome.
 * Some notes on Gnome Shell themes [here](http://www.patrickcoffey.io/post/theming-gnome-shell-sass-and-gulp). Likely depreciated.
 * gnome-shell theme elements are now part of gtk-3.0.`/usr/share/themes/Aadwaita/gtk-3.0/gtk.css`
 * [Peek](https://github.com/phw/peek) might be a good source on how to get the region under a screen area. They also explain that `xwayland` must be used in order for it to work on native wayland sessions at this moment. 
+* See [this line](https://github.com/lupoDharkael/flameshot/blob/42619158fa71bfa10efa285f29591757177b9c1d/src/utils/screengrabber.cpp#L60) in Flameshot which imports a utility from the KDE framework.
 * Blur is is considered by Apple an integral characteristic in Dark mode design. I should look into the efficacy of the css [blur](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur) property.
 
 ### What is done in Mojave? (Chark full of new features)
